@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey_bg_light"
+    tools:context=".ui.converters.ConverterFragment">
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/cal_design3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardddddddddddddddd2"
+                app:cardCornerRadius="8dp"
+                android:elevation="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+                <LinearLayout
+                    android:weightSum="4"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="ExtraText">
+
+                    <LinearLayout
+                        android:background="@color/green_bg_lighter"
+
+                        android:weightSum="4"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/weightCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:src="@drawable/ic_weight"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Weight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/lengthCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:src="@drawable/ic_length"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Length"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/speedCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:src="@drawable/ic_speed"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:text="Speed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/pressureCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:src="@drawable/ic_pressure"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Pressure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                    ////////////////////////////////////////////////////////////
+                    <LinearLayout
+                        android:background="@color/blue_bg_lighter"
+                        android:weightSum="4"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+
+
+                        <LinearLayout
+                            android:id="@+id/volumeCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+
+
+                            <ImageView
+                                android:src="@drawable/volume"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Volume"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/angleCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:src="@drawable/measurement"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Angle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/fuelCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:src="@drawable/ic_fuel"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Fuel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/temperatureCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:src="@drawable/ic_temperature"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Temperature"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    ////////////
+
+
+                    //////////////////////////////////
+
+
+                    <LinearLayout
+                        android:background="@color/orange_bg_lighter"
+                        android:weightSum="4"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/areaCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:src="@drawable/location"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Area"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/cookingCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:src="@drawable/kitchenwares"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Cooking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/dataStorageCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:src="@drawable/sd"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Data Storage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/timeCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:src="@drawable/time"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@color/red_bg_lighter"
+                        android:weightSum="4"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/energyCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:src="@drawable/ic_energy"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Energy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/frequencyCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:src="@drawable/ic_frequency"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Frequency"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/powerCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:src="@drawable/ic_power"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Power"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/resolationCalculator"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:src="@drawable/ic_resolution"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Resolution"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginBottom="40dp"
+                android:layout_below="@+id/cardddddddddddddddd2"
+                android:id="@+id/cardddddddddddddddd3"
+                app:cardCornerRadius="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+
+                        android:id="@+id/hatSizeCalculator"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:src="@drawable/hat"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp">
+
+                        </ImageView>
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="Hat Size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:id="@+id/clotheSizeCalculator"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/shirt"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp">
+
+                        </ImageView>
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="Clothes Size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/shoeSizeCalculator"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/sneakers"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp">
+
+                        </ImageView>
+
+                        <TextView
+                            android:text="Shoe Size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ringSizeCalculator"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/ring"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp">
+                        </ImageView>
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="Ring Size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

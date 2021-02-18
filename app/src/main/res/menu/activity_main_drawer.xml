@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+<!--        <item-->
+<!--            android:id="@+id/nav_home"-->
+<!--            android:icon="@drawable/ic_home"-->
+<!--            android:title="@string/menu_home" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_calculator"-->
+<!--            android:icon="@drawable/ic_calculator"-->
+<!--            android:title="@string/calculator" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_tools"-->
+<!--            android:icon="@drawable/ic_tools"-->
+<!--            android:title="Tools" />-->
+<!--        -->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_converter"-->
+<!--            android:icon="@drawable/ic_convert"-->
+<!--            android:title="@string/unit_converters" />-->
+
+    </group>
+
+
+    <item android:title="@string/communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_rateApp"
+                    android:icon="@drawable/ic_rating"
+                    android:title="@string/rate_app" />
+                <item
+                    android:id="@+id/nav_feedback"
+                    android:icon="@drawable/unitprice"
+                    android:title="@string/nav_label_feedback" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/account">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/unitprice"
+                    android:title="@string/nav_label_logout" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>
+

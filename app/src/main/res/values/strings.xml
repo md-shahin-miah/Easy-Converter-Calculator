@@ -1,0 +1,266 @@
+<resources>
+    <string name="app_name">Easy Calculators</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="rate_app">Rate App</string>
+    <string name="nav_label_feedback">Feedback</string>
+    <string name="nav_label_logout">Logout</string>
+    <string name="faq">FAQ</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="more_apps">More Apps</string>
+    <string name="label_privacy">Privacy Policy</string>
+    <string name="communicate">Communicate</string>
+    <string name="account">Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="todo">TODO</string>
+    <string name="search_here">Search here</string>
+    <string name="category">Category</string>
+    <string name="units">Units</string>
+    <string name="tools">Tools</string>
+    <string name="calculator">Calculator</string>
+    <string name="size">Size</string>
+    <string name="speed">Speed</string>
+    <string name="volume">Volume</string>
+    <string name="fuel">Fuel</string>
+    <string name="pressure">Pressure</string>
+    <string name="power">Power</string>
+    <string name="more">More..</string>
+    <string name="password_generator">Password Generator</string>
+    <string name="compass">Compass</string>
+    <string name="counter">Counter</string>
+    <string name="cryptography">Cryptography</string>
+    <string name="number_to_word">Number to Word</string>
+
+    <string name="tip">Tip</string>
+    <string name="unit_price">Unit Price</string>
+    <string name="ring_size">Ring Size</string>
+    <string name="recommended">Recommended</string>
+    <string name="popular">Popular</string>
+    <string name="temperature">Temperature</string>
+    <string name="number_to_word_n_converter">Number to Word \n Converter</string>
+
+    <string name="unit_converters">Unit Converters</string>
+
+
+    <string-array name="weight_array">
+
+        <item>KILOGRAM</item>
+        <item>GRAM</item>
+        <item>MILIGRAM</item>
+        <item>MICROGRAM</item>
+        <item>TONNE</item>
+        <item>POUND</item>
+        <item>OUNCE</item>
+    </string-array>
+
+    <string-array name="length_array">
+        <item>METRE</item>
+        <item>KILOMETRE</item>
+        <item>CENTIMETRE</item>
+        <item>MILIMETRE</item>
+        <item>MICROMETRE</item>
+        <item>NANOMETRE</item>
+        <item>MILE</item>
+        <item>YARD</item>
+        <item>FEET</item>
+        <item>INCH</item>
+    </string-array>
+    <string-array name="speed_array">
+
+        <item>CENTIMETER PER SECOND</item>
+        <item>CENTIMETER PER MINUTE</item>
+        <item>FOOT PER HOUR</item>
+        <item>FOOT PER MINUTES</item>
+        <item>FOOT PER SECOND</item>
+        <item>INCH PER MINUTE</item>
+        <item>INCH PER SECOND</item>
+        <item>KILOMETRE PER HOUR</item>
+        <item>KILOMETRE PER SECOND</item>
+        <item>METER PER HOUR</item>
+        <item>METER PER MINUTE</item>
+        <item>METER PER SECOND</item>
+        <item>YARD PER HOUR</item>
+        <item>YARD PER MINUTE</item>
+        <item>YARD PER SECOND</item>
+        <item>MILE PER HOUR</item>
+        <item>MILE PER MINUTE</item>
+        <item>MILE PER SECOND</item>
+    </string-array>
+
+    <string-array name="pressure_array">
+        <item>BAR</item>
+        <item>PASCAL</item>
+        <item>POUND-SQUARE PER SQUARE INCH</item>
+        <item>STANDARD ATMOSPHERE</item>
+        <item>TORR</item>
+    </string-array>
+
+    <string-array name="volume_array">
+        <item>US LIQUID GALLON</item>
+        <item>US LIQUID QUART</item>
+        <item>US LIQUID PINT</item>
+        <item>US LEGAL CUP</item>
+        <item>FLUID OUNCE</item>
+        <item>US TABLESPOON</item>
+        <item>US TEASPOON</item>
+        <item>CUBIC METER</item>
+        <item>CUBIC FOOT</item>
+        <item>CUBIC INCH</item>
+        <item>LITER</item>
+        <item>MILILITER</item>
+        <item>IMPERIAL GALLON</item>
+        <item>IMPERIAL QUART</item>
+        <item>IMPERIAL PINT</item>
+        <item>IMPERIAL CUP</item>
+        <item>IPMERIAL TABLESPOON</item>
+        <item>IMPERIAL TEASPOON</item>
+    </string-array>
+    <string-array name="cooking_array">
+        <item>US LIQUID GALLON</item>
+        <item>US LIQUID QUART</item>
+        <item>US LIQUID PINT</item>
+        <item>US LEGAL CUP</item>
+        <item>FLUID OUNCE</item>
+        <item>US TABLESPOON</item>
+        <item>US TEASPOON</item>
+        <item>CUBIC METER</item>
+        <item>CUBIC FOOT</item>
+        <item>CUBIC INCH</item>
+        <item>LITER</item>
+        <item>MILILITER</item>
+        <item>IMPERIAL GALLON</item>
+        <item>IMPERIAL QUART</item>
+        <item>IMPERIAL PINT</item>
+        <item>IMPERIAL CUP</item>
+        <item>IPMERIAL TABLESPOON</item>
+        <item>IMPERIAL TEASPOON</item>
+    </string-array>
+    <string-array name="angle_array">
+
+        <item>RADIAN</item>
+        <item>DEGREE</item>
+        <item>MINUTE</item>
+        <item>SECOND</item>
+        <item>SIGN</item>
+        <item>OCTANT</item>
+        <item>SEXTANT</item>
+        <item>QUADRANT</item>
+        <item>REVOLUTION</item>
+        <item>GON</item>
+        <item>MIL</item>
+    </string-array>
+
+    <string-array name="fuel_array">
+
+        <item>KILOMETER/LITER [KM/L]</item>
+        <item>LITERS/100 km [L/100 km]</item>
+        <item>MILES/GALLON (UK)[MPG]</item>
+        <item>MILES/GALLON (US)[MPG]</item>
+        <item>MILES/LITER [MI/L]</item>
+
+
+    </string-array>
+
+    <string-array name="temperature_array">
+        <item>CELSIUS</item>
+        <item>FAHRENHEIT</item>
+        <item>KELVIN</item>
+        <item>RANKINE</item>
+    </string-array>
+
+
+    <string-array name="area_array">
+
+        <item>SQUARE INCH</item>
+        <item>SQUARE FOOT</item>
+        <item>SQUARE YARD</item>
+        <item>SQUARE MILE</item>
+        <item>ACRE</item>
+        <item>HECTACRE</item>
+        <item>SQUARE MILIMETER</item>
+        <item>SQUARE CENTIMETER</item>
+        <item>SQUARE METER</item>
+        <item>SQUARE KILOMETER</item>
+
+    </string-array>
+
+
+    <string-array name="data_storage_array">
+
+
+        <item>KILOBYTE</item>
+        <item>MEGABYTE</item>
+        <item>GIGABYTE</item>
+        <item>TERABYTE</item>
+        <item>PETABYTE</item>
+        <item>EXABYTE</item>
+        <item>ZETTABYTE</item>
+        <item>YOTTABYTE</item>
+        <item>NIBBLE</item>
+        <item>BYTE</item>
+        <item>BIT</item>
+
+
+    </string-array>
+
+    <string-array name="time_array">
+
+
+        <item>NANOSECOND</item>
+        <item>MICROSECOND</item>
+        <item>MILISECOND</item>
+        <item>SECOND</item>
+        <item>MINUTE</item>
+        <item>HOUR</item>
+        <item>DAY</item>
+        <item>WEEK</item>
+        <item>MONTH</item>
+        <item>SHAKE</item>
+        <item>YEAR</item>
+        <item>DECADE</item>
+        <item>CENTURY</item>
+        <item>MILLENNIUM</item>
+    </string-array>
+
+
+    <string-array name="energy_array">
+        <item>calorie [IT]</item>
+        <item>calorie [th]</item>
+        <item>calorie [mean]</item>
+        <item>electronvolt</item>
+        <item>erg</item>
+        <item>foot-poundal</item>
+        <item>foot-pound-force</item>
+        <item>inch-pound-force</item>
+        <item>joule</item>
+        <item>megajoule</item>
+        <item>kilocalorie [IT]</item>
+        <item>kilocalorie [th]</item>
+        <item>kilocalorie [mean]</item>
+        <item>kilowatt-hour</item>
+        <item>quad</item>
+        <item>therm (EC)</item>
+        <item>therm (U.S.)</item>
+        <item>ton-of-coal-equivalent</item>
+        <item>ton-of-oil-equivalent</item>
+        <item>ton-of-TNT-equivalent</item>
+        <item>watt-hour</item>
+        <item>watt-second</item>
+    </string-array>
+
+
+</resources>
