@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.calculators.activity.BMIActivity">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/llagein2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="20sp"
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:text="Weight"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/grey_active" />
+
+                    <TextView
+                        android:id="@+id/tvTotalDays"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="3dp"
+                        android:textColor="#aaffffff"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="3dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout01"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="top|bottom|center_vertical|fill_vertical|center|fill">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1.0"
+                                android:text="KG"
+                                android:textColor="@color/grey_active" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/weightbmiID"
+                                android:inputType="number"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1.0"
+                                android:hint="00"
+                                android:textColor="@color/black"
+                                android:textSize="30sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="20sp"
+                        android:id="@+id/TextView08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:text="Height"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/grey_active" />
+
+                    <TextView
+                        android:id="@+id/tvBirthDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="3dp"
+                        android:textColor="#aaffffff"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="3dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout06"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="top|bottom|center_vertical|fill_vertical|center|fill">
+
+                            <TextView
+                                android:id="@+id/TextView14"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1.0"
+                                android:text="Feet"
+                                android:textColor="@color/grey_active" />
+
+                            <TextView
+                                android:id="@+id/TextView15"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:text="Inches"
+                                android:textColor="@color/grey_active" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout04"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:inputType="number"
+                                android:id="@+id/heightbmifeetID"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1.0"
+                                android:hint="00"
+                                android:textColor="@color/black"
+                                android:textSize="30sp" />
+
+                            <EditText
+                                android:inputType="number"
+                                android:id="@+id/heightbmiincheID"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:hint="00"
+                                android:textColor="@color/black"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="4dp"
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:background="@color/grey_active"
+                    android:padding="12dp"
+                    android:id="@+id/bmicalculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Calculate"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#ffffff" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="3dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="top|bottom|center_vertical|fill_vertical|center|fill">
+
+                            <TextView
+                                android:textSize="16sp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_weight="1.0"
+                                android:text=" YOUR BMI"
+                                android:textColor="@color/grey_active" />
+
+                            <TextView
+                                android:id="@+id/typeBmiID"
+                                android:textSize="16sp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:text="value"
+                                android:textColor="@color/grey_active" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1.0"
+                                android:text="Resut"
+                                android:textColor="@color/grey_active"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:id="@+id/showresultbmiID"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:text="00"
+                                android:textColor="@color/grey_active"
+                                android:textSize="26sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+
+                    <TableRow
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="5dp">
+                        <TextView
+                            android:id="@+id/bmiValueTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:text="BMI Values"
+                            android:textColor="@color/grey_active"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+
+                    <View
+                        android:background="@color/grey_active"
+                        android:layout_width = "fill_parent"
+                        android:layout_height="1dip"
+                        />
+                    <TableRow
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="3dp">
+                        <TextView
+                            android:id="@+id/underweightTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Underweight"
+                            android:textColor="@color/red_active"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/underwValuesTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text=":  less than 18.5"
+                            android:textColor="@color/grey_active"
+                            android:textSize="16sp" />
+                    </TableRow>
+
+                    <View
+                        android:background="@color/grey_active"
+                        android:layout_width = "fill_parent"
+                        android:layout_height="1dip"
+                        />
+                    <TableRow
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="3dp">
+
+                        <TextView
+                            android:id="@+id/normalTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Normal"
+                            android:textColor="@color/green_active"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/normalValuesTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text=":  between 18.5 and 24.9"
+                            android:textColor="@color/grey_active"
+                            android:textSize="16sp"/>
+                    </TableRow>
+
+                    <View
+                        android:background="@color/grey_active"
+                        android:layout_width = "fill_parent"
+                        android:layout_height="1dip"
+                        />
+                    <TableRow
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="3dp">
+
+                        <TextView
+                            android:id="@+id/overweightTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Overweight"
+                            android:textColor="@color/orange_active"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/overweightValuesTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text=":  between 25 and 29.9"
+                            android:textColor="@color/grey_active"
+                            android:textSize="16sp"/>
+                    </TableRow>
+
+
+                    <View
+                        android:background="@color/grey_active"
+                        android:layout_width = "fill_parent"
+                        android:layout_height="1dip"
+                        />
+
+                    <TableRow
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/obeseTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Obese"
+                            android:textColor="@color/red_active"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/obeseValuesTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text=":  30 or greater"
+                            android:textColor="@color/grey_active"
+                            android:textSize="16sp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+</ScrollView>

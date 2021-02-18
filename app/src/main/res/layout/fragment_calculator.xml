@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.calculators.CalculatorFragment"
+    android:background="@color/blue_grey_bg_light"
+    >
+
+    <LinearLayout
+        android:background="@drawable/cal_design"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="140dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ageCardId"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="2dp"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/ic_age"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp">
+                            </ImageView>
+
+                            <TextView
+                                android:padding="10dp"
+                                android:textSize="20sp"
+                                android:textAlignment="center"
+                                android:text="Age"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/bmicardId"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="2dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/ic_bmi"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp">
+                            </ImageView>
+
+                            <TextView
+                                android:padding="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BMI"
+                                android:textAlignment="center"
+                                android:textSize="20sp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/tipcardId"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="2dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/ic_tip"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+                            </ImageView>
+
+
+                            <TextView
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+                                android:text="Tips"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/unitpricecardID"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="2dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/ic_tag"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+                            </ImageView>
+
+
+                            <TextView
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+                                android:text="Unit Price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/loancardID"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="2dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/ic_loan"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+                            </ImageView>
+
+
+                            <TextView
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+                                android:text="Loan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/taxcardID"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="2dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/ic_taxes"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+                            </ImageView>
+
+                            <TextView
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+                                android:text="Tax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/discountcardID"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="2dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/ic_discount"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+                            </ImageView>
+
+
+                            <TextView
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+                                android:text="Discounts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/imterestcardID"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="2dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/ic_percentage"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+                            </ImageView>
+
+
+                            <TextView
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+                                android:text="Interest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/calooricburnID"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="2dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/burn"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+                            </ImageView>
+
+
+                            <TextView
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+                                android:text="Caloric burn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/bodayfatcardID"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="2dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/fat"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+                            </ImageView>
+
+                            <TextView
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+                                android:text="Body Fat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/datecardID"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="2dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/ageimage"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp">
+                            </ImageView>
+
+
+                            <TextView
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+                                android:text="Date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>

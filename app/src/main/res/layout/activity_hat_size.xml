@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.converters.activity.HatSizeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <LinearLayout
+                                android:padding="6dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="top|bottom|center_vertical|fill_vertical|center|fill">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0"
+                                    android:text="Loan"
+                                    android:textColor="@color/grey_active" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:padding="3dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <TextView
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".5"
+                                    android:text=""
+                                    android:textColor="@color/grey_active"
+                                    android:textSize="12sp" />
+
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0">
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0">
+
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.20"
+                                            android:text="EU size (cm)"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="US size"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="UK size"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="Inches"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:padding="3dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <TextView
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".5"
+                                    android:text=""
+                                    android:textColor="@color/grey_active"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0">
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0">
+
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.20"
+                                            android:text="53"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="US size"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="UK size"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="Inches"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:padding="3dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:gravity="center"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".5"
+                                    android:text="Small"
+                                    android:textColor="@color/grey_active"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0">
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0">
+
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.20"
+                                            android:text="55"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="US size"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="UK size"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="Inches"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:padding="3dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <TextView
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".5"
+                                    android:text=""
+                                    android:textColor="@color/grey_active"
+                                    android:textSize="12sp" />
+
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0">
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0">
+
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.20"
+                                            android:text="56"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="US size"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="UK size"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="Inches"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <view
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp">
+
+                            </view>
+                            <LinearLayout
+                                android:padding="3dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <TextView
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".5"
+                                    android:text=""
+                                    android:textColor="@color/grey_active"
+                                    android:textSize="12sp" />
+
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0">
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0">
+
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.20"
+                                            android:text="56"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="US size"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="UK size"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="Inches"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:padding="3dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".5"
+                                    android:text="Medium"
+                                    android:textColor="@color/grey_active"
+                                    android:textSize="12sp" />
+
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0">
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0">
+
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.20"
+                                            android:text="56"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="US size"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="UK size"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="Inches"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:padding="3dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <TextView
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".5"
+                                    android:text=""
+                                    android:textColor="@color/grey_active"
+                                    android:textSize="12sp" />
+
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0">
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0">
+
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.20"
+                                            android:text="56"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="44"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="44"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0"
+                                            android:text="44"
+                                            android:textColor="@color/grey_active"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="2dp">
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
