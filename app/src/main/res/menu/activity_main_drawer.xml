@@ -25,6 +25,15 @@
 <!--            android:icon="@drawable/ic_convert"-->
 <!--            android:title="@string/unit_converters" />-->
 
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/ic_policy"
+            android:title="@string/label_privacy" />
+
+        <item
+            android:id="@+id/nav_moreapps"
+            android:icon="@drawable/ic_moreapps"
+            android:title="@string/more_apps" />
     </group>
 
 
@@ -34,27 +43,27 @@
 
                 <item
                     android:id="@+id/nav_rateApp"
-                    android:icon="@drawable/ic_rating"
+                    android:icon="@drawable/ic_rateapp"
                     android:title="@string/rate_app" />
                 <item
                     android:id="@+id/nav_feedback"
-                    android:icon="@drawable/unitprice"
+                    android:icon="@drawable/ic_feedback"
                     android:title="@string/nav_label_feedback" />
 
             </group>
         </menu>
     </item>
 
-    <item android:title="@string/account">
-        <menu>
-            <group android:checkableBehavior="single">
-                <item
-                    android:id="@+id/nav_logout"
-                    android:icon="@drawable/unitprice"
-                    android:title="@string/nav_label_logout" />
-            </group>
-        </menu>
-    </item>
+<!--    <item android:title="@string/account">-->
+<!--        <menu>-->
+<!--            <group android:checkableBehavior="single">-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_logout"-->
+<!--                    android:icon="@drawable/unitprice"-->
+<!--                    android:title="@string/nav_label_logout" />-->
+<!--            </group>-->
+<!--        </menu>-->
+<!--    </item>-->
 
 
 </menu>
