@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.okcodex.easyconverters.R
 import com.okcodex.easyconverters.ui.converters.activity.*
@@ -40,17 +41,42 @@ class ConverterFragment : Fragment() {
         dataStorageCalculator.setOnClickListener { openAllConvertersActivity(R.array.data_storage_array) }
         timeCalculator.setOnClickListener { openAllConvertersActivity(R.array.time_array) }
         energyCalculator.setOnClickListener { openAllConvertersActivity(R.array.energy_array) }
-        frequencyCalculator.setOnClickListener { openAllConvertersActivity(R.array.length_array) }
-        powerCalculator.setOnClickListener { openAllConvertersActivity(R.array.length_array) }
-        resolationCalculator.setOnClickListener { openAllConvertersActivity(R.array.length_array) }
+
+        frequencyCalculator.setOnClickListener {
+            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
+          //  openAllConvertersActivity(R.array.length_array)
+        }
+        powerCalculator.setOnClickListener {
+            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
+         //  openAllConvertersActivity(R.array.length_array)
+        }
+        resolationCalculator.setOnClickListener {
+            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
+           // openAllConvertersActivity(R.array.length_array)
+        }
 
 
 
-        hatSizeCalculator.setOnClickListener { startActivity(Intent(requireContext(), HatSizeActivity::class.java)) }
-        clotheSizeCalculator.setOnClickListener { startActivity(Intent(requireContext(), ClothesActivity::class.java)) }
-        shoeSizeCalculator.setOnClickListener { startActivity(Intent(requireContext(), ShoeSizeActivity::class.java)) }
-        ringSizeCalculator.setOnClickListener { startActivity(Intent(requireContext(), RingSizeActivity::class.java)) }
+        hatSizeCalculator.setOnClickListener {
+            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
+         //   startActivity(Intent(requireContext(), HatSizeActivity::class.java))
 
+        }
+        clotheSizeCalculator.setOnClickListener {
+
+            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
+            //startActivity(Intent(requireContext(), ClothesActivity::class.java))
+        }
+        shoeSizeCalculator.setOnClickListener {
+
+            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
+            //startActivity(Intent(requireContext(), ShoeSizeActivity::class.java))
+        }
+        ringSizeCalculator.setOnClickListener {
+
+            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
+           // startActivity(Intent(requireContext(), RingSizeActivity::class.java))
+        }
 
 
     }

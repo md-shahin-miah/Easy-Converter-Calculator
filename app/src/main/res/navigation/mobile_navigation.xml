@@ -3,26 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_calculator"
+    >
+    <!--    app:startDestination="@+id/nav_home"-->
 
+<!--    <fragment-->
+<!--        android:id="@+id/nav_home"-->
+<!--        android:name="com.okcodex.easyconverters.ui.home.HomeFragment"-->
+<!--        android:label="@string/menu_home"-->
+<!--        tools:layout="@layout/fragment_home">-->
+<!--        <action-->
+<!--            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"-->
+<!--            app:destination="@id/nav_home_second" />-->
+<!--    </fragment>-->
+<!--    -->
 
-    <fragment
-        android:id="@+id/nav_home"
-        android:name="com.okcodex.easyconverters.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home">
-        <action
-            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-            app:destination="@id/nav_home_second" />
-    </fragment>
     <fragment
         android:id="@+id/nav_home_second"
         android:name="com.okcodex.easyconverters.ui.home.HomeFragment"
         android:label="@string/home_second"
         tools:layout="@layout/fragment_home">
+<!--        <action-->
+<!--            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"-->
+<!--            app:destination="@id/nav_home" /> -->
+<!--        -->
         <action
             android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
-            app:destination="@id/nav_home" />
+            app:destination="@id/nav_calculator" />
 
         <argument
             android:name="myArg"
@@ -34,7 +41,14 @@
         android:id="@+id/nav_calculator"
         android:name="com.okcodex.easyconverters.ui.calculators.CalculatorFragment"
         android:label="Calculator"
-        tools:layout="@layout/fragment_calculator" />
+        tools:layout="@layout/fragment_calculator"
+        >
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+
+    </fragment>
 
 
     <fragment
