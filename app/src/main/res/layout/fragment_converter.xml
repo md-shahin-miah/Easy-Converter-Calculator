@@ -517,6 +517,7 @@
 
                     <LinearLayout
 
+
                         android:id="@+id/hatSizeCalculator"
                         android:gravity="center"
                         android:orientation="vertical"

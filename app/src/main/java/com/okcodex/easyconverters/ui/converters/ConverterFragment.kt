@@ -58,8 +58,8 @@ class ConverterFragment : Fragment() {
 
 
         hatSizeCalculator.setOnClickListener {
-            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
-         //   startActivity(Intent(requireContext(), HatSizeActivity::class.java))
+            //Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(requireContext(), HatSizeActivity::class.java))
 
         }
         clotheSizeCalculator.setOnClickListener {
