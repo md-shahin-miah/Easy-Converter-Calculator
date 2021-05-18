@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.calculators.activity.AgeCalculatorActivity">
+    android:orientation="vertical"
+    android:background="@color/blue_grey_active"
+    tools:context=".ui.calculators.activity.AgeCalculatorActivity"
+    tools:ignore="UnusedAttribute">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_menu" />
+
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
 
 
         <LinearLayout
@@ -25,11 +40,12 @@
                     android:id="@+id/TextView01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
                     android:text="Today's Date"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/grey_active"
-                    android:textSize="18sp" />
+                    android:textColor="@color/gery_inactive"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:id="@+id/textViewCurrentDay"
@@ -39,102 +55,151 @@
                     android:layout_alignParentBottom="true"
                     android:layout_marginEnd="3dp"
                     android:layout_marginBottom="1dp"
-                    android:textColor="@color/grey_active"
+                    android:textColor="@color/gery_inactive"
                     android:textSize="14sp" />
             </RelativeLayout>
 
-            <androidx.cardview.widget.CardView
+            <com.google.android.material.card.MaterialCardView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
+                android:padding="@dimen/_4sdp"
                 app:cardCornerRadius="4dp"
-                app:cardElevation="4dp">
+                app:cardElevation="5dp">
 
 
-                <FrameLayout
-                    android:id="@+id/FrameLayout1"
+                <LinearLayout
+                    android:id="@+id/lldate1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="3dp">
+                    android:background="@color/white">
 
 
-                    <LinearLayout
-                        android:id="@+id/lldate1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <EditText
-                            android:id="@+id/editTextCurrentDay"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="#00000000"
-                            android:ellipsize="end"
-                            android:gravity="start"
-                            android:hint="dd"
-                            android:inputType="textCapCharacters|number|numberSigned|numberDecimal|numberPassword|phone"
-                            android:maxLength="2"
-                            android:nextFocusDown="@+id/etTMonth"
-                            android:padding="10dp"
-                            android:selectAllOnFocus="true"
-                            android:textColor="@color/grey_active"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:id="@+id/tvSeprator1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="-"
-                            android:textColor="#fff" />
-
-                        <EditText
-                            android:id="@+id/editTextCurrentMonth"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="#00000000"
-                            android:ellipsize="end"
-                            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
-                            android:hint="mm"
-                            android:inputType="textCapCharacters|number|numberSigned|numberDecimal|numberPassword|phone"
-                            android:maxLength="2"
-                            android:nextFocusDown="@+id/etTYear"
-                            android:padding="10dp"
-                            android:selectAllOnFocus="true"
-                            android:textColor="@color/grey_active"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:id="@+id/tvSeprator2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="-"
-                            android:textColor="#fff" />
-
-                        <EditText
-                            android:id="@+id/editTextCurrentYear"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="#00000000"
-                            android:ellipsize="end"
-                            android:hint="yyyy"
-                            android:inputType="textCapCharacters|number|numberSigned|numberDecimal|numberPassword|phone"
-                            android:maxLength="4"
-                            android:nextFocusDown="@+id/etBDay"
-                            android:padding="10dp"
-                            android:selectAllOnFocus="true"
-                            android:textColor="@color/grey_active"
-                            android:textSize="20sp" />
-                    </LinearLayout>
-
-                    <ImageView
-                        android:id="@+id/imageViewCalenderFirst"
+                    <TextView
+                        android:id="@+id/editTextCurrentDay"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="end"
-                        android:contentDescription="Calender"
-                        android:src="@drawable/calander" />
-                </FrameLayout>
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:hint="dd"
+                        android:maxLength="2"
+                        android:padding="10dp"
+                        android:textColor="@color/grey_active"
+                        android:textSize="20dp"
+                        tools:ignore="HardcodedText,SpUsage" />
 
-            </androidx.cardview.widget.CardView>
+                    <!--                        <TextView-->
+                    <!--                            android:id="@+id/editTextCurrentDay"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:background="#00000000"-->
+                    <!--                            android:ellipsize="end"-->
+                    <!--                            android:gravity="start"-->
+                    <!--                            android:hint="dd"-->
+                    <!--                            android:inputType="textCapCharacters|number|numberSigned|numberDecimal|numberPassword|phone"-->
+                    <!--                            android:maxLength="2"-->
+                    <!--                            android:nextFocusDown="@+id/etTMonth"-->
+                    <!--                            android:padding="10dp"-->
+                    <!--                            android:selectAllOnFocus="true"-->
+                    <!--                            android:textColor="@color/grey_active"-->
+                    <!--                            android:textSize="20dp"-->
+                    <!--                            tools:ignore="Autofill,HardcodedText,SpUsage" />-->
+
+                    <TextView
+                        android:id="@+id/tvSeprator1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="#fff"
+                        tools:ignore="HardcodedText" />
+
+
+                    <TextView
+                        android:id="@+id/editTextCurrentMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:hint="mm"
+                        android:maxLength="2"
+                        android:padding="10dp"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/grey_active"
+                        android:textSize="20dp"
+                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+
+                    <!--                        <EditText-->
+                    <!--                            android:id="@+id/editTextCurrentMonth"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:background="#00000000"-->
+                    <!--                            android:ellipsize="end"-->
+                    <!--                            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"-->
+                    <!--                            android:hint="mm"-->
+                    <!--                            android:inputType="textCapCharacters|number|numberSigned|numberDecimal|numberPassword|phone"-->
+                    <!--                            android:maxLength="2"-->
+                    <!--                            android:nextFocusDown="@+id/etTYear"-->
+                    <!--                            android:padding="10dp"-->
+                    <!--                            android:selectAllOnFocus="true"-->
+                    <!--                            android:textColor="@color/grey_active"-->
+                    <!--                            android:textSize="20dp"-->
+                    <!--                            tools:ignore="Autofill,HardcodedText,RtlHardcoded,SpUsage" />-->
+
+                    <TextView
+                        android:id="@+id/tvSeprator2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="#fff"
+                        tools:ignore="HardcodedText" />
+
+
+                    <TextView
+                        android:id="@+id/editTextCurrentYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:inputType="textCapCharacters|number|numberSigned|numberDecimal|numberPassword|phone"
+                        android:hint="yyyy"
+                        android:maxLength="4"
+                        android:padding="10dp"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/grey_active"
+                        android:textSize="20dp"
+                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextViewEdits" />
+
+                    <!--                        <EditText-->
+                    <!--                            android:id="@+id/editTextCurrentYear"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:background="#00000000"-->
+                    <!--                            android:ellipsize="end"-->
+                    <!--                            android:hint="yyyy"-->
+                    <!--                            android:inputType="textCapCharacters|number|numberSigned|numberDecimal|numberPassword|phone"-->
+                    <!--                            android:maxLength="4"-->
+                    <!--                            android:nextFocusDown="@+id/etBDay"-->
+                    <!--                            android:padding="10dp"-->
+                    <!--                            android:selectAllOnFocus="true"-->
+                    <!--                            android:textColor="@color/grey_active"-->
+                    <!--                            android:textSize="20dp"-->
+                    <!--                            tools:ignore="HardcodedText,SpUsage" />-->
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageViewCalenderFirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:contentDescription="Calender"
+                    android:src="@drawable/calander"
+                    tools:ignore="HardcodedText" />
+
+
+            </com.google.android.material.card.MaterialCardView>
 
             <RelativeLayout
                 android:id="@+id/llAgein2"
@@ -145,11 +210,12 @@
                     android:id="@+id/TextView02"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
                     android:text="Date Of Birth"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/grey_active"
-                    android:textSize="18sp" />
+                    android:textColor="@color/gery_inactive"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
             </RelativeLayout>
 
 
@@ -158,17 +224,13 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
                 app:cardCornerRadius="4dp"
+                android:padding="@dimen/_4sdp"
                 app:cardElevation="4dp">
 
 
-                <FrameLayout
-                    android:id="@+id/FrameLayout2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="3dp">
 
                     <LinearLayout
-
+                        android:background="@color/white"
                         android:id="@+id/lldate2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -188,14 +250,16 @@
                             android:selectAllOnFocus="true"
                             android:textColor="@color/grey_active"
                             android:textColorHint="#8e8e8e"
-                            android:textSize="20sp" />
+                            android:textSize="20sp"
+                            tools:ignore="Autofill,HardcodedText" />
 
                         <TextView
                             android:id="@+id/tvSeprator3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="-"
-                            android:textColor="#fff" />
+                            android:textColor="#fff"
+                            tools:ignore="HardcodedText" />
 
                         <EditText
                             android:id="@+id/editTextBirthMonth"
@@ -211,14 +275,16 @@
                             android:selectAllOnFocus="true"
                             android:textColor="@color/grey_active"
                             android:textColorHint="#8e8e8e"
-                            android:textSize="20sp" />
+                            android:textSize="20sp"
+                            tools:ignore="Autofill,HardcodedText" />
 
                         <TextView
                             android:id="@+id/tvSeprator4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="-"
-                            android:textColor="#fff" />
+                            android:textColor="#fff"
+                            tools:ignore="HardcodedText" />
 
                         <EditText
                             android:id="@+id/editTextBirthYear"
@@ -234,7 +300,8 @@
                             android:selectAllOnFocus="true"
                             android:textColor="@color/grey_active"
                             android:textColorHint="#8e8e8e"
-                            android:textSize="20sp" />
+                            android:textSize="20sp"
+                            tools:ignore="Autofill,HardcodedText" />
                     </LinearLayout>
 
                     <ImageView
@@ -243,8 +310,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="end"
                         android:contentDescription="Calender"
-                        android:src="@drawable/calander" />
-                </FrameLayout>
+                        android:src="@drawable/calander"
+                        tools:ignore="HardcodedText" />
+
 
             </androidx.cardview.widget.CardView>
 
@@ -268,7 +336,8 @@
                     android:padding="12dp"
                     android:text="Calculate"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    tools:ignore="HardcodedText" />
 
             </androidx.cardview.widget.CardView>
 
@@ -280,7 +349,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="10dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="@dimen/_3sdp">
 
                 <RelativeLayout
                     android:id="@id/llAgein2"
@@ -295,8 +365,9 @@
                         android:layout_marginBottom="1dp"
                         android:text="Age"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/grey_active"
-                        android:textSize="18sp" />
+                        android:textColor="@color/gery_inactive"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
 
                     <TextView
                         android:id="@+id/tvTotalDays"
@@ -314,11 +385,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
+                    android:outlineSpotShadowColor="#B1A9A9"
+                    android:outlineAmbientShadowColor="#A6A6A6"
                     app:cardCornerRadius="4dp"
-                    app:cardElevation="4dp">
+                    app:cardElevation="5dp">
 
 
-                    <LinearLayout
+                    <RelativeLayout
                         android:id="@+id/linearLayout3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -339,7 +412,8 @@
                                 android:layout_marginStart="20dp"
                                 android:layout_weight="1.0"
                                 android:text="Years"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
 
                             <TextView
                                 android:id="@+id/TextView04"
@@ -347,7 +421,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1.0"
                                 android:text="Months"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
 
                             <TextView
                                 android:id="@+id/TextView03"
@@ -355,13 +430,15 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1.0"
                                 android:text="Days"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
 
                         <LinearLayout
                             android:id="@+id/linearLayout4"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/LinearLayout01">
 
                             <TextView
                                 android:id="@+id/textViewFinalYears"
@@ -371,7 +448,8 @@
                                 android:layout_weight="1.0"
                                 android:text="00"
                                 android:textColor="@color/black"
-                                android:textSize="30sp" />
+                                android:textSize="25sp"
+                                tools:ignore="HardcodedText" />
 
                             <TextView
                                 android:id="@+id/textViewFinalMonths"
@@ -380,7 +458,8 @@
                                 android:layout_weight="1.0"
                                 android:text="00"
                                 android:textColor="@color/black"
-                                android:textSize="30sp" />
+                                android:textSize="25sp"
+                                tools:ignore="HardcodedText" />
 
                             <TextView
                                 android:id="@+id/textViewFinalDays"
@@ -389,10 +468,12 @@
                                 android:layout_weight="1.0"
                                 android:text="00"
                                 android:textColor="@color/black"
-                                android:textSize="30sp" />
+                                android:textSize="25sp"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
 
-                    </LinearLayout>
+                    </RelativeLayout>
+
                 </androidx.cardview.widget.CardView>
 
             </LinearLayout>
@@ -404,6 +485,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
+                android:padding="@dimen/_3sdp"
                 android:orientation="vertical">
 
                 <RelativeLayout
@@ -415,12 +497,13 @@
                         android:id="@+id/TextView08"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
                         android:layout_marginBottom="1dp"
                         android:text="Next Birthday"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/grey_active"
-                        android:textSize="18sp" />
+                        android:textColor="@color/gery_inactive"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/tvBirthDay"
@@ -431,7 +514,8 @@
                         android:layout_marginRight="3dp"
                         android:textColor="#aaffffff"
                         android:textSize="14sp"
-                        android:visibility="gone" />
+                        android:visibility="gone"
+                        tools:ignore="RtlHardcoded" />
                 </RelativeLayout>
 
 
@@ -439,10 +523,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
+                    android:padding="@dimen/_3sdp"
+                    android:outlineSpotShadowColor="#B1A9A9"
+                    android:outlineAmbientShadowColor="#A6A6A6"
                     app:cardCornerRadius="4dp"
-                    app:cardElevation="4dp">
+                    app:cardElevation="5dp">
 
-                    <LinearLayout
+                    <RelativeLayout
                         android:id="@+id/LinearLayout05"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -452,7 +539,7 @@
                         <LinearLayout
                             android:id="@+id/LinearLayout06"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:gravity="top|bottom|center_vertical|fill_vertical|center|fill">
 
                             <TextView
@@ -462,7 +549,8 @@
                                 android:layout_marginStart="20dp"
                                 android:layout_weight="1.0"
                                 android:text="Months"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
 
                             <TextView
                                 android:id="@+id/TextView15"
@@ -470,13 +558,15 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1.0"
                                 android:text="Days"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
 
                         <LinearLayout
                             android:id="@+id/LinearLayout04"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/LinearLayout06">
 
                             <TextView
                                 android:id="@+id/textViewNextBirthdayMonths"
@@ -486,7 +576,8 @@
                                 android:layout_weight="1.0"
                                 android:text="00"
                                 android:textColor="@color/black"
-                                android:textSize="30sp" />
+                                android:textSize="25sp"
+                                tools:ignore="HardcodedText" />
 
                             <TextView
                                 android:id="@+id/textViewNextBirthdayDays"
@@ -495,10 +586,11 @@
                                 android:layout_weight="1.0"
                                 android:text="00"
                                 android:textColor="@color/black"
-                                android:textSize="30sp" />
+                                android:textSize="25sp"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
 
-                    </LinearLayout>
+                    </RelativeLayout>
 
                 </androidx.cardview.widget.CardView>
 
@@ -520,10 +612,14 @@
                     android:padding="12dp"
                     android:text="Clear"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    tools:ignore="HardcodedText" />
 
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
-</ScrollView>
+    </ScrollView>
+
+
+</RelativeLayout>

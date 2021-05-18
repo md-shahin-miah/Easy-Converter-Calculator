@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,16 +8,29 @@
     tools:context=".ui.calculators.activity.BMIActivity">
 
 
+
+    <include
+        android:id="@+id/toolbar_bmi"
+        layout="@layout/toolbar_menu" />
+
+
+    <ScrollView
+        android:layout_below="@+id/toolbar_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="ScrollViewSize">
 
             <LinearLayout
                 android:id="@+id/llAge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
                 android:orientation="vertical">
@@ -29,15 +42,16 @@
 
                     <TextView
                         android:textStyle="bold"
-                        android:layout_marginLeft="5dp"
-                        android:textSize="20sp"
+                        android:layout_marginStart="5dp"
+                        android:textSize="18sp"
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
                         android:text="Weight"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/grey_active" />
+                        android:textColor="@color/grey_active"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/tvTotalDays"
@@ -49,12 +63,15 @@
                         android:textColor="#aaffffff"
                         android:textSize="14sp"
                         android:visibility="gone" />
+
+
                 </RelativeLayout>
 
                 <androidx.cardview.widget.CardView
                     android:layout_margin="3dp"
                     app:cardElevation="4dp"
                     app:cardCornerRadius="4dp"
+                    android:padding="@dimen/_4sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -80,7 +97,8 @@
                                 android:layout_marginStart="20dp"
                                 android:layout_weight="1.0"
                                 android:text="KG"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
 
                         </LinearLayout>
 
@@ -98,11 +116,13 @@
                                 android:layout_weight="1.0"
                                 android:hint="00"
                                 android:textColor="@color/black"
-                                android:textSize="30sp" />
+                                android:textSize="23sp"
+                                tools:ignore="Autofill,HardcodedText" />
 
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
             </LinearLayout>
@@ -123,23 +143,24 @@
 
                     <TextView
                         android:textStyle="bold"
-                        android:layout_marginLeft="3dp"
-                        android:textSize="20sp"
+                        android:layout_marginStart="3dp"
+                        android:textSize="18sp"
                         android:id="@+id/TextView08"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
                         android:text="Height"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/grey_active" />
+                        android:textColor="@color/grey_active"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/tvBirthDay"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginRight="3dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="3dp"
                         android:textColor="#aaffffff"
                         android:textSize="14sp"
                         android:visibility="gone" />
@@ -149,6 +170,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_margin="3dp"
                     app:cardElevation="4dp"
+                    android:padding="@dimen/_4sdp"
                     app:cardCornerRadius="4dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -173,7 +195,8 @@
                                 android:layout_marginStart="20dp"
                                 android:layout_weight="1.0"
                                 android:text="Feet"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
 
                             <TextView
                                 android:id="@+id/TextView15"
@@ -181,7 +204,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1.0"
                                 android:text="Inches"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -198,7 +222,8 @@
                                 android:layout_weight="1.0"
                                 android:hint="00"
                                 android:textColor="@color/black"
-                                android:textSize="30sp" />
+                                android:textSize="23sp"
+                                tools:ignore="Autofill,HardcodedText" />
 
                             <EditText
                                 android:inputType="number"
@@ -208,7 +233,8 @@
                                 android:layout_weight="1.0"
                                 android:hint="00"
                                 android:textColor="@color/black"
-                                android:textSize="30sp" />
+                                android:textSize="23sp"
+                                tools:ignore="Autofill,HardcodedText" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -231,7 +257,7 @@
 
                 <TextView
                     android:textAllCaps="true"
-                    android:background="@color/grey_active"
+                    android:background="@color/red_inactive"
                     android:padding="12dp"
                     android:id="@+id/bmicalculate"
                     android:layout_width="match_parent"
@@ -239,7 +265,8 @@
                     android:gravity="center"
                     android:text="Calculate"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    tools:ignore="HardcodedText" />
 
             </androidx.cardview.widget.CardView>
 
@@ -272,22 +299,24 @@
                             android:gravity="top|bottom|center_vertical|fill_vertical|center|fill">
 
                             <TextView
-                                android:textSize="16sp"
+                                android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
                                 android:layout_weight="1.0"
                                 android:text=" YOUR BMI"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
 
                             <TextView
                                 android:id="@+id/typeBmiID"
-                                android:textSize="16sp"
+                                android:textSize="15sp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1.0"
                                 android:text="value"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -303,7 +332,8 @@
                                 android:layout_weight="1.0"
                                 android:text="Resut"
                                 android:textColor="@color/grey_active"
-                                android:textSize="26sp" />
+                                android:textSize="24sp"
+                                tools:ignore="HardcodedText" />
 
                             <TextView
                                 android:textStyle="bold"
@@ -313,7 +343,8 @@
                                 android:layout_weight="1.0"
                                 android:text="00"
                                 android:textColor="@color/grey_active"
-                                android:textSize="26sp" />
+                                android:textSize="23sp"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -352,10 +383,11 @@
                             android:layout_weight="1"
                             android:gravity="center_vertical"
                             android:paddingBottom="5dp"
-                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
                             android:text="BMI Values"
                             android:textColor="@color/grey_active"
-                            android:textSize="20sp" />
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText,RtlSymmetry" />
                     </TableRow>
 
 
@@ -379,17 +411,19 @@
                             android:text="Underweight"
                             android:textColor="@color/red_active"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:id="@+id/underwValuesTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:paddingLeft="5dp"
+                            android:paddingStart="5dp"
                             android:text=":  less than 18.5"
                             android:textColor="@color/grey_active"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText,RtlSymmetry" />
                     </TableRow>
 
                     <View
@@ -413,17 +447,19 @@
                             android:text="Normal"
                             android:textColor="@color/green_active"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:id="@+id/normalValuesTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:paddingLeft="5dp"
+                            android:paddingStart="5dp"
                             android:text=":  between 18.5 and 24.9"
                             android:textColor="@color/grey_active"
-                            android:textSize="16sp"/>
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText,RtlSymmetry" />
                     </TableRow>
 
                     <View
@@ -447,17 +483,19 @@
                             android:text="Overweight"
                             android:textColor="@color/orange_active"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:id="@+id/overweightValuesTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:paddingLeft="5dp"
+                            android:paddingStart="5dp"
                             android:text=":  between 25 and 29.9"
                             android:textColor="@color/grey_active"
-                            android:textSize="16sp"/>
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText,RtlSymmetry" />
                     </TableRow>
 
 
@@ -482,17 +520,19 @@
                             android:text="Obese"
                             android:textColor="@color/red_active"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:id="@+id/obeseValuesTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:paddingLeft="5dp"
+                            android:paddingStart="5dp"
                             android:text=":  30 or greater"
                             android:textColor="@color/grey_active"
-                            android:textSize="16sp"/>
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText,RtlSymmetry" />
                     </TableRow>
 
                 </TableLayout>
@@ -505,4 +545,12 @@
 
 
 
-</ScrollView>
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

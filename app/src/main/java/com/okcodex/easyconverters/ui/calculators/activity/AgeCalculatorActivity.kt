@@ -1,5 +1,6 @@
 package com.okcodex.easyconverters.ui.calculators.activity
 
+import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.app.DatePickerDialog.OnDateSetListener
 import android.os.Bundle
@@ -10,7 +11,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import com.okcodex.easyconverters.R
+import kotlinx.android.synthetic.main.activity_age_calculator.*
+import kotlinx.android.synthetic.main.toolbar_menu.*
+import kotlinx.android.synthetic.main.toolbar_menu.view.*
 
 import java.text.SimpleDateFormat
 import java.util.*
@@ -31,16 +36,18 @@ class AgeCalculatorActivity : AppCompatActivity(), View.OnClickListener {
     private  lateinit  var editTextBirthDay: EditText
     private  lateinit   var editTextBirthMonth: EditText
     private  lateinit   var editTextBirthYear: EditText
-    private  lateinit  var editTextCurrentDay: EditText
-    private  lateinit  var editTextCurrentMonth: EditText
-    private  lateinit  var editTextCurrentYear: EditText
+    private  lateinit  var editTextCurrentDay: TextView
+    private  lateinit  var editTextCurrentMonth: TextView
+    private  lateinit  var editTextCurrentYear: TextView
 
 
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_age_calculator)
 
+        supportActionBar?.hide()
 
         textViewNextBirthdayMonths = findViewById(R.id.textViewNextBirthdayMonths)
         textViewNextBirthdayDays = findViewById(R.id.textViewNextBirthdayDays)
@@ -68,6 +75,9 @@ class AgeCalculatorActivity : AppCompatActivity(), View.OnClickListener {
         imageViewCalenderSecond.setOnClickListener(this)
         imageViewCalenderFirst.setOnClickListener(this)
 
+
+        initToolbar()
+        toolbar.tvHeader.text="Age Calculator"
 
 
     }
@@ -192,6 +202,15 @@ class AgeCalculatorActivity : AppCompatActivity(), View.OnClickListener {
         textViewFinalYears.text = calculatedYear.toString()
     }
 
+    private fun initToolbar() {
+
+
+        ivBack.setOnClickListener {
+            onBackPressed()
+             finish()
+        }
+
+    }
 
 
 }

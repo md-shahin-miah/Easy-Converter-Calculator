@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.calculators.activity.TipActivity">
 
+
+
+
+    <include
+        android:id="@+id/toolbar_tips"
+        layout="@layout/toolbar_menu" />
+
+
     <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/toolbar_tips"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -50,23 +59,25 @@
                                 android:layout_marginStart="20dp"
                                 android:layout_weight="1.0"
                                 android:text="Please enter the bill amount"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
 
                         </LinearLayout>
 
                         <LinearLayout
+                            android:gravity="center_vertical"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
                             <TextView
-
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="20dp"
                                 android:layout_weight="1.0"
                                 android:text="Total Bill"
                                 android:textColor="@color/grey_active"
-                                android:textSize="30sp" />
+                                android:textSize="24sp"
+                                tools:ignore="HardcodedText" />
 
                             <EditText
                                 android:id="@+id/etotalbillID"
@@ -78,7 +89,8 @@
                                 android:layout_weight="1.0"
                                 android:hint="00"
                                 android:textColor="@color/black"
-                                android:textSize="30sp" />
+                                android:textSize="25sp"
+                                tools:ignore="Autofill,HardcodedText" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -127,22 +139,26 @@
                                 android:layout_marginStart="20dp"
                                 android:layout_weight="1.0"
                                 android:text="Would you like to split the bill?"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
 
                         </LinearLayout>
 
                         <LinearLayout
+                            android:gravity="center_vertical"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
                             <TextView
+
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="20dp"
                                 android:layout_weight="1.0"
                                 android:text="Tip"
                                 android:textColor="@color/grey_active"
-                                android:textSize="30sp" />
+                                android:textSize="24sp"
+                                tools:ignore="HardcodedText" />
 
 
                             <EditText
@@ -157,14 +173,16 @@
                                 android:layout_weight="1.0"
                                 android:hint="00"
                                 android:textColor="@color/black"
-                                android:textSize="30sp" />
+                                android:textSize="25sp"
+                                tools:ignore="Autofill,HardcodedText" />
 
 
                             <ImageView
                                 android:src="@drawable/persententt"
                                 android:layout_gravity="center_vertical"
-                                android:layout_width="35dp"
-                                android:layout_height="35dp">
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                tools:ignore="ContentDescription">
 
                             </ImageView>
 
@@ -213,7 +231,8 @@
                                 android:layout_marginStart="20dp"
                                 android:layout_weight="1.0"
                                 android:text="How Many partners you have?"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
 
                         </LinearLayout>
 
@@ -228,7 +247,8 @@
                                 android:layout_weight="1.0"
                                 android:text="Person"
                                 android:textColor="@color/grey_active"
-                                android:textSize="30sp" />
+                                android:textSize="24sp"
+                                tools:ignore="HardcodedText" />
 
                             <EditText
                                 android:id="@+id/epersonID"
@@ -239,7 +259,8 @@
                                 android:layout_weight="1.0"
                                 android:hint="00"
                                 android:textColor="@color/black"
-                                android:textSize="30sp" />
+                                android:textSize="25sp"
+                                tools:ignore="Autofill,HardcodedText" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -272,7 +293,8 @@
                     android:gravity="center"
                     android:text="Calculate"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText" />
 
             </androidx.cardview.widget.CardView>
 
@@ -310,7 +332,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1.0"
                                 android:text=" Your Result"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
 
                             <TextView
                                 android:id="@+id/typeBmiID"
@@ -319,7 +342,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1.0"
                                 android:text="value"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
 
 
@@ -342,7 +366,8 @@
                                     android:layout_weight="1.0"
                                     android:text="Final Bill"
                                     android:textColor="@color/grey_active"
-                                    android:textSize="22sp" />
+                                    android:textSize="22sp"
+                                    tools:ignore="HardcodedText" />
 
                                 <TextView
                                     android:id="@+id/totalbill"
@@ -351,7 +376,8 @@
                                     android:layout_weight="1.0"
                                     android:text="00"
                                     android:textColor="@color/black"
-                                    android:textSize="22sp" />
+                                    android:textSize="22sp"
+                                    tools:ignore="HardcodedText" />
                             </LinearLayout>
 
 
@@ -372,7 +398,8 @@
                                     android:layout_weight="1.0"
                                     android:text="Tip Amount"
                                     android:textColor="@color/grey_active"
-                                    android:textSize="22sp" />
+                                    android:textSize="22sp"
+                                    tools:ignore="HardcodedText" />
 
                                 <TextView
                                     android:id="@+id/totaltip"
@@ -381,7 +408,8 @@
                                     android:layout_weight="1.0"
                                     android:text="00"
                                     android:textColor="@color/black"
-                                    android:textSize="22sp" />
+                                    android:textSize="22sp"
+                                    tools:ignore="HardcodedText" />
                             </LinearLayout>
 
                             <View
@@ -401,7 +429,8 @@
                                     android:layout_weight="1.0"
                                     android:text="Per Person Bill"
                                     android:textColor="@color/grey_active"
-                                    android:textSize="22sp" />
+                                    android:textSize="22sp"
+                                    tools:ignore="HardcodedText" />
 
                                 <TextView
                                     android:id="@+id/personbill"
@@ -410,7 +439,8 @@
                                     android:layout_weight="1.0"
                                     android:text="00"
                                     android:textColor="@color/black"
-                                    android:textSize="22sp" />
+                                    android:textSize="22sp"
+                                    tools:ignore="HardcodedText" />
                             </LinearLayout>
 
                             <View
@@ -430,7 +460,8 @@
                                     android:layout_weight="1.0"
                                     android:text="Per Person Tip"
                                     android:textColor="@color/grey_active"
-                                    android:textSize="22sp" />
+                                    android:textSize="22sp"
+                                    tools:ignore="HardcodedText" />
 
                                 <TextView
                                     android:id="@+id/persontip"
@@ -439,7 +470,8 @@
                                     android:layout_weight="1.0"
                                     android:text="00"
                                     android:textColor="@color/black"
-                                    android:textSize="22sp" />
+                                    android:textSize="22sp"
+                                    tools:ignore="HardcodedText" />
                             </LinearLayout>
 
 
@@ -474,4 +506,4 @@
 
 
 
-</LinearLayout>
+</RelativeLayout>

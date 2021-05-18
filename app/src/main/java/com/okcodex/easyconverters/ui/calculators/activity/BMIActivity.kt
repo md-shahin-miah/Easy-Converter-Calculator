@@ -1,5 +1,6 @@
 package com.okcodex.easyconverters.ui.calculators.activity
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
@@ -7,6 +8,10 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.okcodex.easyconverters.R
+import kotlinx.android.synthetic.main.activity_age_calculator.*
+import kotlinx.android.synthetic.main.activity_b_m_i.*
+import kotlinx.android.synthetic.main.toolbar_menu.*
+import kotlinx.android.synthetic.main.toolbar_menu.view.*
 
 import java.text.DecimalFormat
 
@@ -26,9 +31,13 @@ class BMIActivity : AppCompatActivity() {
     var result = 0.0
 
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_b_m_i)
+
+        supportActionBar?.hide()
+
 
 
         EWeight = findViewById(R.id.weightbmiID)
@@ -39,7 +48,8 @@ class BMIActivity : AppCompatActivity() {
         typebmi = findViewById(R.id.typeBmiID)
 
 
-
+        initToolbar()
+        toolbar_bmi.tvHeader.text="BMI Calculator"
 
         calculate.setOnClickListener(View.OnClickListener {
             val w = EWeight.text.toString().trim()
@@ -89,4 +99,14 @@ class BMIActivity : AppCompatActivity() {
 
 
     }
+    private fun initToolbar() {
+
+
+        ivBack.setOnClickListener {
+            onBackPressed()
+            finish()
+        }
+
+    }
+
 }
