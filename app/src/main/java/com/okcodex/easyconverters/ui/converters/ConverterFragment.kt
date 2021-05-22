@@ -43,12 +43,12 @@ class ConverterFragment : Fragment() {
         energyCalculator.setOnClickListener { openAllConvertersActivity(R.array.energy_array) }
 
         frequencyCalculator.setOnClickListener {
-            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
-          //  openAllConvertersActivity(R.array.length_array)
+          //  Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
+           openAllConvertersActivity(R.array.frequency_array)
         }
         powerCalculator.setOnClickListener {
-            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
-         //  openAllConvertersActivity(R.array.length_array)
+           // Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
+           openAllConvertersActivity(R.array.power_array)
         }
         resolationCalculator.setOnClickListener {
             Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
@@ -64,18 +64,18 @@ class ConverterFragment : Fragment() {
         }
         clotheSizeCalculator.setOnClickListener {
 
-            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
-            //startActivity(Intent(requireContext(), ClothesActivity::class.java))
+            //Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(requireContext(), ClothesActivity::class.java))
         }
         shoeSizeCalculator.setOnClickListener {
 
-            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
-            //startActivity(Intent(requireContext(), ShoeSizeActivity::class.java))
+           // Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(requireContext(), ShoeSizeActivity::class.java))
         }
         ringSizeCalculator.setOnClickListener {
 
-            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
-           // startActivity(Intent(requireContext(), RingSizeActivity::class.java))
+           // Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(requireContext(), RingSizeActivity::class.java))
         }
 
 

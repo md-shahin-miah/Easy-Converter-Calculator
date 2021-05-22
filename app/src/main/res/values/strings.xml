@@ -270,4 +270,98 @@
     </string-array>
 
 
+
+
+    <string-array name="frequency_array">
+        <item>1/second</item>
+        <item>cycle/second</item>
+        <item>degree/hour</item>
+        <item> degree/minute</item>
+        <item> degree/second</item>
+        <item> gigahertz</item>
+        <item>  hertz</item>
+        <item> kilohertz</item>
+        <item> megahertz</item>
+
+    </string-array>
+
+
+
+
+    <string-array name="power_array">
+
+        <item>attowatt</item>
+        <item>Btu/hour [I.T.]</item>
+        <item>Btu/minute [I.T.]</item>
+        <item>Btu/second [I.T.]</item>
+        <item>calorie/hour [I.T.]</item>
+        <item>calorie/minute [I.T.]</item>
+        <item>calorie/second [I.T.]</item>
+        <item>centiwatt</item>
+        <item>cheval vapeur</item>
+        <item>clusec</item>
+        <item>deciwatt</item>
+        <item>dekawatt</item>
+        <item>dyne centimeter/hour</item>
+        <item>dyne centimeter/minute</item>
+        <item>dyne centimeter/second</item>
+        <item>erg/hour</item>
+        <item>erg/minute</item>
+        <item>erg/second</item>
+        <item>exawatt</item>
+        <item>femtowatt</item>
+        <item>foot pound-force/hour</item>
+        <item>foot pound-force/minute</item>
+        <item>foot pound-force/second</item>
+        <item>foot poundal/hour</item>
+        <item>foot poundal/minute</item>
+        <item>foot poundal/second</item>
+        <item>gigawatt</item>
+        <item>gram-force centimeter/hour</item>
+        <item>gram-force centimeter/minute</item>
+        <item>gram-force centimeter/second</item>
+        <item>hectowatt</item>
+        <item>horsepower [international]</item>
+        <item>horsepower [electric]</item>
+        <item>horsepower [metric]</item>
+        <item>horsepower [water]</item>
+        <item>inch ounce-force revolution/minute</item>
+        <item>joule/hour</item>
+        <item>joule/minute</item>
+        <item>joule/second</item>
+        <item>kilocalorie/hour [I.T.]</item>
+        <item>kilocalorie/minute [I.T.]</item>
+        <item>kilocalorie/second [I.T.]</item>
+        <item>kilogram-force meter/hour</item>
+        <item>kilogram-force meter/minute</item>
+        <item>kilogram-force meter/second</item>
+        <item>kilopond meter/hour</item>
+        <item>kilopond meter/minute</item>
+        <item>kilopond meter/second</item>
+        <item>kilowatt</item>
+        <item>megawatt</item>
+        <item>microwatt</item>
+        <item>million Btu/hour [I.T.]</item>
+        <item>milliwatt</item>
+        <item>nanowatt</item>
+        <item>newton meter/hour</item>
+        <item>newton meter/minute</item>
+        <item>newton meter/second</item>
+        <item>petawatt</item>
+        <item>pferdestarke</item>
+        <item>picowatt</item>
+        <item>poncelet</item>
+        <item>pound square foot/cubic second</item>
+        <item>terawatt</item>
+        <item>ton of refrigeration</item>
+        <item>watt</item>
+        <item>yoctowatt</item>
+        <item>zeptowatt</item>
+        <item>zettawatt</item>
+
+
+    </string-array>
+
+
+
 </resources>

@@ -2,13 +2,11 @@ package com.okcodex.easyconverters.ui.converters.activity
 
 import android.os.Bundle
 import android.util.Log
-import android.util.TimeUtils
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.okcodex.easyconverters.R
 import com.okcodex.easyconverters.ui.converters.activity.utils.*
-import kotlin.math.log
 
 class AllConvertersActivity : AppCompatActivity() {
 
@@ -122,7 +120,7 @@ class AllConvertersActivity : AppCompatActivity() {
                         Area.calculation(valueFrom, valueTo, value.toFloat(), textViewTo, resultShowText)
                     }
                     R.array.cooking_array -> {
-                        Cooking.calculation(valueFrom, valueTo, textViewTo, resultShowText,etFrom)
+                        Volume.calculation(valueFrom, valueTo, textViewTo, resultShowText,etFrom)
                     }
                     R.array.data_storage_array -> {
                         DataStorage.calculation(valueFrom, valueTo, textViewTo, resultShowText,etFrom)
@@ -133,7 +131,16 @@ class AllConvertersActivity : AppCompatActivity() {
                     R.array.energy_array -> {
                         Energy.calculation(valueFrom, valueTo, textViewTo, resultShowText,etFrom)
                     }
+
+                    R.array.frequency_array->{
+                        Frequency.calculation(valueFrom,valueTo,textViewTo,resultShowText,etFrom)
+                    }
+                     R.array.power_array->{
+                         Power.calculation(valueFrom,valueTo,textViewTo,resultShowText,etFrom)
+                    }
+
                 }
+
 //                else if (array==R.array.){
 //                    Weight.calculation(valueFrom, valueTo, value.toFloat(), textViewTo, resultShowText)
 //                }

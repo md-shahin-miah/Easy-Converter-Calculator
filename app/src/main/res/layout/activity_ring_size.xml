@@ -1,564 +1,1805 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="10dp"
-    android:layout_marginTop="20dp"
-    android:layout_marginRight="10dp"
     android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.converters.activity.RingSizeActivity">
 
-  <androidx.cardview.widget.CardView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_margin="3dp"
-      app:cardCornerRadius="4dp"
-      app:cardElevation="4dp">
+    <include
+        android:id="@+id/toolbar_Ring_size"
+        layout="@layout/toolbar_menu" />
 
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="10dp">
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
-          android:padding="6dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.0"
-            android:text="Loan"
-            android:textColor="@color/grey_active" />
-
-      </LinearLayout>
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:padding="3dp">
-
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight=".5"
-            android:text=""
-            android:textColor="@color/grey_active"
-            android:textSize="12sp" />
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_Ring_size">
 
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.0"
-            android:gravity="center">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ScrollViewSize">
 
 
-          <LinearLayout
-              android:layout_width="0dp"
-              android:layout_height="wrap_content"
-              android:layout_weight="1.0">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
 
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.20"
-                android:gravity="center"
-                android:text="EU size (cm)"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="US size"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="UK size"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="Inches"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="UselessParent">
 
 
-          </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        tools:ignore="UselessLeaf">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_17sdp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:gravity="center"
+                                android:text="Inside Diameter MM"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:gravity="center"
+                                android:text="Inside Diameter Inches"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:gravity="center"
+                                android:text="USA Canada Mexico Ring Size"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_90sdp"
+                                android:gravity="center"
+                                android:text="UK Ireland Australia New Zealand South Africa"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:gravity="center"
+                                android:text="Germany France Ring Size"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:gravity="center"
+                                android:text="Spain Italy Ring Size"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:gravity="center"
+                                android:text="Japan China India South America"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="15 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.59"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="H"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="46.8"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="6,5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="15.3 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.60"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="4.5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="I"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="48"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="8"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="8"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="15.6 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.62"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="J"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="49.3"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="9,5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="9"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="16.2 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.63"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="5.5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="K"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="50.6"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="10,5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="10"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="16.6 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.65"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="6"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="L"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="51.9"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="12"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="11"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="16.9 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.67"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="6.5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="M"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="53.1"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="13,5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="13"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="17.2 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.68"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="7"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="N"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="54.4"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="14,5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="14"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="17.8 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.70"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="7.5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="O"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="55.7	"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="16"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="15"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="18.1 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.71"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="8"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="P"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="57"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="17"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="16"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="18.5 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.73"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="8.5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="Q"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="58.3"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="18,5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="17"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="19.1 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.75"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="9"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="R"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="59.5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="20"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="18"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="19.4 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.76"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="9.5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="S"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="60.8"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="21"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="19"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="19.7 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.78"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="10"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="T"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="62.1"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="22,5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="20"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="20.4 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.79"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="10.5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="U"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="63.4"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="23,5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="22"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="20.7 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.81"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="11"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="V"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="63.6"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="25"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="23"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="21.0 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.83"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="11.5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="W"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="65.9"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="26"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="24"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="21.6 mm	"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.84"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="12"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="X"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="67.2"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="27.5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="25"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="22.0 mm	"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.86"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="12.5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="Y"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="68.5	"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="29"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="26"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="22.3 mm	"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.87"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="13"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="Z"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="69.7	"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="30"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="27"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="22.9 mm	"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.89"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="13.5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="Z+2"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="71"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="32"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="23.2 mm	"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.91	"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="14"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="Z+3"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="72.3"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="33	"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="23.6 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.92	"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="14.5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="Z+4"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="73.6"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="34,5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey_active" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="24.0 mm"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="0.94"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="15"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_166sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="Z+5"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="74.8"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="35"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="@dimen/_150sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
 
 
         </LinearLayout>
 
 
-      </LinearLayout>
+    </ScrollView>
 
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:padding="3dp">
 
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight=".5"
-            android:gravity="center"
-            android:text=""
-            android:textColor="@color/grey_active"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.0"
-            android:gravity="center">
-
-
-          <LinearLayout
-              android:layout_width="0dp"
-              android:layout_height="wrap_content"
-              android:layout_weight="1.0">
-
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.20"
-                android:gravity="center"
-                android:text="53"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="US size"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="UK size"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="Inches"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-          </LinearLayout>
-
-
-        </LinearLayout>
-
-
-      </LinearLayout>
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:padding="3dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight=".5"
-            android:gravity="center"
-            android:text="Small"
-            android:textColor="@color/grey_active"
-            android:textSize="12sp" />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.0"
-            android:gravity="center">
-
-
-          <LinearLayout
-              android:layout_width="0dp"
-              android:layout_height="wrap_content"
-              android:layout_weight="1.0">
-
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.20"
-                android:gravity="center"
-                android:text="55"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="US size"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="UK size"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="Inches"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-
-          </LinearLayout>
-
-
-        </LinearLayout>
-
-
-      </LinearLayout>
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:padding="3dp">
-
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight=".5"
-            android:text=""
-            android:textColor="@color/grey_active"
-            android:textSize="12sp" />
-
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.0"
-            android:gravity="center">
-
-
-          <LinearLayout
-              android:layout_width="0dp"
-              android:layout_height="wrap_content"
-              android:layout_weight="1.0">
-
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.20"
-                android:gravity="center"
-                android:text="56"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="US size"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="UK size"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="Inches"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-
-          </LinearLayout>
-
-
-        </LinearLayout>
-
-
-      </LinearLayout>
-
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:padding="3dp">
-
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight=".5"
-            android:text=""
-            android:textColor="@color/grey_active"
-            android:textSize="12sp" />
-
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.0"
-            android:gravity="center">
-
-
-          <LinearLayout
-              android:layout_width="0dp"
-              android:layout_height="wrap_content"
-              android:layout_weight="1.0">
-
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.20"
-                android:gravity="center"
-                android:text="56"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="US size"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="UK size"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="Inches"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-
-          </LinearLayout>
-
-
-        </LinearLayout>
-
-
-      </LinearLayout>
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:padding="3dp">
-
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight=".5"
-            android:gravity="center"
-            android:text="Medium"
-            android:textColor="@color/grey_active"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.0"
-            android:gravity="center">
-
-
-          <LinearLayout
-              android:layout_width="0dp"
-              android:layout_height="wrap_content"
-              android:layout_weight="1.0">
-
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.20"
-                android:gravity="center"
-                android:text="56"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="US size"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="UK size"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="Inches"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-
-          </LinearLayout>
-
-
-        </LinearLayout>
-
-
-      </LinearLayout>
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:padding="3dp">
-
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight=".5"
-            android:text=""
-            android:textColor="@color/grey_active"
-            android:textSize="12sp" />
-
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.0"
-            android:gravity="center">
-
-
-          <LinearLayout
-              android:layout_width="0dp"
-              android:layout_height="wrap_content"
-              android:layout_weight="1.0">
-
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.20"
-                android:gravity="center"
-                android:text="56"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="44"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="44"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="44"
-                android:textColor="@color/grey_active"
-                android:textSize="12sp" />
-
-          </LinearLayout>
-
-        </LinearLayout>
-
-
-      </LinearLayout>
-    </LinearLayout>
-
-
-  </androidx.cardview.widget.CardView>
-
-  </LinearLayout>
+</RelativeLayout>
