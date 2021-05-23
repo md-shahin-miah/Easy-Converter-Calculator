@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
     private lateinit var navView: NavigationView
     private lateinit var drawerLayout: DrawerLayout
 
-
+//dev_shahin
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
