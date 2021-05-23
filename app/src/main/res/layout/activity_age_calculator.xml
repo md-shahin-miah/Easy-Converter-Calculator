@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/blue_grey_active"
+
     tools:context=".ui.calculators.activity.AgeCalculatorActivity"
     tools:ignore="UnusedAttribute">
 
@@ -43,7 +43,7 @@
                     android:layout_marginStart="4dp"
                     android:text="Today's Date"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/gery_inactive"
+                    android:textColor="@color/grey_active"
                     android:textSize="18sp"
                     tools:ignore="HardcodedText" />
 
@@ -213,7 +213,7 @@
                     android:layout_marginStart="3dp"
                     android:text="Date Of Birth"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/gery_inactive"
+                    android:textColor="@color/grey_active"
                     android:textSize="18sp"
                     tools:ignore="HardcodedText" />
             </RelativeLayout>
@@ -365,7 +365,7 @@
                         android:layout_marginBottom="1dp"
                         android:text="Age"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/gery_inactive"
+                        android:textColor="@color/grey_active"
                         android:textSize="18sp"
                         tools:ignore="HardcodedText,RtlHardcoded" />
 
@@ -501,7 +501,7 @@
                         android:layout_marginBottom="1dp"
                         android:text="Next Birthday"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/gery_inactive"
+                        android:textColor="@color/grey_active"
                         android:textSize="18sp"
                         tools:ignore="HardcodedText" />
 

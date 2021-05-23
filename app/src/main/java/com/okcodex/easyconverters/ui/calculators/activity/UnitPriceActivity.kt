@@ -1,11 +1,16 @@
 package com.okcodex.easyconverters.ui.calculators.activity
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.okcodex.easyconverters.R
+import kotlinx.android.synthetic.main.activity_age_calculator.*
+import kotlinx.android.synthetic.main.activity_unit_price.*
+import kotlinx.android.synthetic.main.toolbar_menu.*
+import kotlinx.android.synthetic.main.toolbar_menu.view.*
 
 class UnitPriceActivity : AppCompatActivity() {
 
@@ -17,9 +22,19 @@ class UnitPriceActivity : AppCompatActivity() {
     private lateinit var calculate: TextView
     private lateinit var showResult: TextView
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_unit_price)
+
+
+
+        supportActionBar?.hide()
+
+
+        initToolbar()
+        toolbar_unit.tvHeader.text="Unit Price Calculator"
+
 
         eTtotalPrice = findViewById(R.id.eTotalPriceID)
 
@@ -51,4 +66,15 @@ class UnitPriceActivity : AppCompatActivity() {
         val res = (t + f) / q
         showResult.text = "$res"
     }
+
+    private fun initToolbar() {
+
+
+        ivBack.setOnClickListener {
+            onBackPressed()
+            finish()
+        }
+
+    }
+
 }

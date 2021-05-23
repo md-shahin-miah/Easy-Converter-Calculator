@@ -1,11 +1,16 @@
 package com.okcodex.easyconverters.ui.calculators.activity
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.okcodex.easyconverters.R
+import kotlinx.android.synthetic.main.activity_discounts.*
+import kotlinx.android.synthetic.main.activity_loan.*
+import kotlinx.android.synthetic.main.toolbar_menu.*
+import kotlinx.android.synthetic.main.toolbar_menu.view.*
 
 
 class DiscountsActivity : AppCompatActivity() {
@@ -17,9 +22,20 @@ class DiscountsActivity : AppCompatActivity() {
     private lateinit var eTotalPrice: EditText
 
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_discounts)
+
+
+
+
+        supportActionBar?.hide()
+
+
+        initToolbar()
+        toolbar_discount.tvHeader.text="Discount Calculator"
+
 
         labelDiscountAmount = findViewById(R.id.labelDiscountAmount)
         labelTotalAmount = findViewById(R.id.labelTotalAmount)
@@ -48,6 +64,16 @@ class DiscountsActivity : AppCompatActivity() {
                 }
             }
 
+        }
+
+    }
+
+    private fun initToolbar() {
+
+
+        ivBack.setOnClickListener {
+            onBackPressed()
+            finish()
         }
 
     }

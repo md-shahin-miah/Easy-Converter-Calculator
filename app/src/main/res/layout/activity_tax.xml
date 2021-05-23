@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +7,13 @@
     tools:context=".ui.calculators.activity.TaxActivity">
 
 
+    <include
+        android:id="@+id/toolbar_tax"
+        layout="@layout/toolbar_menu" />
+
+
     <LinearLayout
+        android:layout_below="@+id/toolbar_tax"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -55,11 +61,13 @@
                                     android:layout_marginStart="20dp"
                                     android:layout_weight="1.0"
                                     android:text="Please Enter  the amount of price and percentage "
-                                    android:textColor="@color/grey_active" />
+                                    android:textColor="@color/grey_active"
+                                    tools:ignore="HardcodedText" />
 
                             </LinearLayout>
 
                             <LinearLayout
+                                android:gravity="center"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
@@ -70,7 +78,8 @@
                                     android:layout_weight="1.0"
                                     android:text="Amount"
                                     android:textColor="@color/grey_active"
-                                    android:textSize="30sp" />
+                                    android:textSize="25sp"
+                                    tools:ignore="HardcodedText" />
 
                                 <EditText
                                     android:id="@+id/eTotalPriceID"
@@ -82,7 +91,8 @@
                                     android:hint="00"
                                     android:inputType="number"
                                     android:textColor="@color/black"
-                                    android:textSize="30sp" />
+                                    android:textSize="25sp"
+                                    tools:ignore="HardcodedText" />
                             </LinearLayout>
 
                         </LinearLayout>
@@ -129,11 +139,13 @@
                                     android:layout_marginStart="20dp"
                                     android:layout_weight="1.0"
                                     android:text="Would you like to split the bill?"
-                                    android:textColor="@color/grey_active" />
+                                    android:textColor="@color/grey_active"
+                                    tools:ignore="HardcodedText" />
 
                             </LinearLayout>
 
                             <LinearLayout
+                                android:gravity="center"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
@@ -144,7 +156,8 @@
                                     android:layout_weight="1.0"
                                     android:text="Tax"
                                     android:textColor="@color/grey_active"
-                                    android:textSize="30sp" />
+                                    android:textSize="25sp"
+                                    tools:ignore="HardcodedText" />
 
 
                                 <EditText
@@ -158,12 +171,13 @@
                                     android:inputType="number"
                                     android:text="2"
                                     android:textColor="@color/black"
-                                    android:textSize="30sp" />
+                                    android:textSize="25sp"
+                                    tools:ignore="HardcodedText" />
 
 
                                 <ImageView
-                                    android:layout_width="35dp"
-                                    android:layout_height="35dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
                                     android:layout_gravity="center_vertical"
                                     android:src="@drawable/persententt">
 
@@ -262,6 +276,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:gravity="center"
                                     android:id="@+id/txtTotalResult"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
@@ -310,7 +325,8 @@
                                     android:layout_weight="1.0"
                                     android:text="Per product"
                                     android:textColor="@color/grey_active"
-                                    android:textSize="16sp" />
+                                    android:textSize="16sp"
+                                    tools:ignore="HardcodedText" />
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -318,7 +334,8 @@
                                     android:layout_weight="1.0"
                                     android:text="value"
                                     android:textColor="@color/grey_active"
-                                    android:textSize="16sp" />
+                                    android:textSize="16sp"
+                                    tools:ignore="HardcodedText" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -333,16 +350,19 @@
                                     android:text="tax"
                                     android:textAllCaps="true"
                                     android:textSize="26sp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
 
                                 <TextView
+                                    android:gravity="center"
                                     android:id="@+id/taxResult"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1.0"
                                     android:text="00"
                                     android:textSize="26sp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
                             </LinearLayout>
 
                         </LinearLayout>
@@ -372,4 +392,4 @@
     </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

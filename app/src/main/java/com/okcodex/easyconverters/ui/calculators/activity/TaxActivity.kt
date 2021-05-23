@@ -1,11 +1,16 @@
 package com.okcodex.easyconverters.ui.calculators.activity
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.okcodex.easyconverters.R
+import kotlinx.android.synthetic.main.activity_loan.*
+import kotlinx.android.synthetic.main.activity_tax.*
+import kotlinx.android.synthetic.main.toolbar_menu.*
+import kotlinx.android.synthetic.main.toolbar_menu.view.*
 
 class TaxActivity : AppCompatActivity() {
 
@@ -19,9 +24,20 @@ class TaxActivity : AppCompatActivity() {
 
 
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tax)
+
+
+
+        supportActionBar?.hide()
+
+
+        initToolbar()
+        toolbar_tax.tvHeader.text="Tax Calculator"
+
+
 
         eTotalPrice = findViewById(R.id.eTotalPriceID)
         eTax = findViewById(R.id.eTaxID)
@@ -53,5 +69,15 @@ class TaxActivity : AppCompatActivity() {
         }
 
         
+    }
+
+    private fun initToolbar() {
+
+
+        ivBack.setOnClickListener {
+            onBackPressed()
+            finish()
+        }
+
     }
 }

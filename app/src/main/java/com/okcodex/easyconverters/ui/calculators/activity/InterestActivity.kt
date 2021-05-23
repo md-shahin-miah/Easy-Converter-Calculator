@@ -1,11 +1,16 @@
 package com.okcodex.easyconverters.ui.calculators.activity
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.okcodex.easyconverters.R
+import kotlinx.android.synthetic.main.activity_interest.*
+import kotlinx.android.synthetic.main.activity_loan.*
+import kotlinx.android.synthetic.main.toolbar_menu.*
+import kotlinx.android.synthetic.main.toolbar_menu.view.*
 
 class InterestActivity : AppCompatActivity() {
 
@@ -16,9 +21,20 @@ class InterestActivity : AppCompatActivity() {
     private lateinit var eTotalPrice: EditText
 
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_interest)
+
+
+
+        supportActionBar?.hide()
+
+
+        initToolbar()
+        toolbar_internet.tvHeader.text="Internet Calculator"
+
+
 
         labelInterestAmount = findViewById(R.id.labelInterestAmount)
         labelTotalAmount = findViewById(R.id.labelTotalAmount)
@@ -47,6 +63,16 @@ class InterestActivity : AppCompatActivity() {
                 }
             }
 
+        }
+
+    }
+
+    private fun initToolbar() {
+
+
+        ivBack.setOnClickListener {
+            onBackPressed()
+            finish()
         }
 
     }

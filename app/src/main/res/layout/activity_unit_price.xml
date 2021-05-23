@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.calculators.activity.UnitPriceActivity">
 
+
+    <include
+        android:id="@+id/toolbar_unit"
+        layout="@layout/toolbar_menu" />
+
     <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/toolbar_unit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -50,11 +56,13 @@
                                 android:layout_marginStart="20dp"
                                 android:layout_weight="1.0"
                                 android:text="Please Enter the price you want to calculate. "
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
 
                         </LinearLayout>
 
                         <LinearLayout
+                            android:gravity="center"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
@@ -65,7 +73,8 @@
                                 android:layout_weight="1.0"
                                 android:text="Total Price"
                                 android:textColor="@color/grey_active"
-                                android:textSize="30sp" />
+                                android:textSize="25sp"
+                                tools:ignore="HardcodedText" />
 
                             <EditText
                                 android:id="@+id/eTotalPriceID"
@@ -77,7 +86,8 @@
                                 android:hint="00"
                                 android:inputType="number"
                                 android:textColor="@color/black"
-                                android:textSize="30sp" />
+                                android:textSize="25sp"
+                                tools:ignore="Autofill,HardcodedText" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -124,11 +134,13 @@
                                 android:layout_marginStart="20dp"
                                 android:layout_weight="1.0"
                                 android:text="How many quantity you have?"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
 
                         </LinearLayout>
 
                         <LinearLayout
+                            android:gravity="center"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
@@ -139,7 +151,8 @@
                                 android:layout_weight="1.0"
                                 android:text="Quantity"
                                 android:textColor="@color/grey_active"
-                                android:textSize="30sp" />
+                                android:textSize="25sp"
+                                tools:ignore="HardcodedText" />
 
 
                             <EditText
@@ -153,7 +166,8 @@
                                 android:inputType="number"
                                 android:text="0"
                                 android:textColor="@color/black"
-                                android:textSize="30sp" />
+                                android:textSize="25sp"
+                                tools:ignore="HardcodedText" />
 
 
                         </LinearLayout>
@@ -199,11 +213,13 @@
                                 android:layout_marginStart="20dp"
                                 android:layout_weight="1.0"
                                 android:text="Do you want to include fare cost?"
-                                android:textColor="@color/grey_active" />
+                                android:textColor="@color/grey_active"
+                                tools:ignore="HardcodedText" />
 
                         </LinearLayout>
 
                         <LinearLayout
+                            android:gravity="center"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
@@ -214,7 +230,8 @@
                                 android:layout_weight="1.0"
                                 android:text="Fare Cost"
                                 android:textColor="@color/grey_active"
-                                android:textSize="30sp" />
+                                android:textSize="25sp"
+                                tools:ignore="HardcodedText" />
 
                             <EditText
                                 android:id="@+id/eFareCostID"
@@ -225,7 +242,8 @@
                                 android:hint="00"
                                 android:inputType="number"
                                 android:textColor="@color/black"
-                                android:textSize="30sp" />
+                                android:textSize="25sp"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -255,7 +273,8 @@
                     android:text="Calculate"
                     android:textAllCaps="true"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    tools:ignore="HardcodedText" />
 
             </androidx.cardview.widget.CardView>
 
@@ -293,7 +312,8 @@
                                 android:layout_weight="1.0"
                                 android:text="Per product"
                                 android:textColor="@color/grey_active"
-                                android:textSize="16sp" />
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
 
                             <TextView
                                 android:id="@+id/typeBmiID"
@@ -302,7 +322,8 @@
                                 android:layout_weight="1.0"
                                 android:text="value"
                                 android:textColor="@color/grey_active"
-                                android:textSize="16sp" />
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -317,9 +338,11 @@
                                 android:text="Best Price"
                                 android:textAllCaps="true"
                                 android:textSize="26sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
 
                             <TextView
+                                android:gravity="center"
                                 android:textStyle="bold"
                                 android:id="@+id/showresultUnitPriceID"
                                 android:layout_width="0dp"
@@ -327,7 +350,8 @@
                                 android:layout_weight="1.0"
                                 android:text="00"
                                 android:textColor="@color/black"
-                                android:textSize="26sp" />
+                                android:textSize="26sp"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -354,5 +378,5 @@
     </androidx.core.widget.NestedScrollView>
 
 
-</LinearLayout>
+</RelativeLayout>
 
