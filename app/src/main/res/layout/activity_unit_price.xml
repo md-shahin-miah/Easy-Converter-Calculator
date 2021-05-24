@@ -316,6 +316,7 @@
                                 tools:ignore="HardcodedText" />
 
                             <TextView
+                                android:gravity="center"
                                 android:id="@+id/typeBmiID"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"

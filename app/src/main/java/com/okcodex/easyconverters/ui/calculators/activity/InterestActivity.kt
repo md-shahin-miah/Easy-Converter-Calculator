@@ -32,7 +32,7 @@ class InterestActivity : AppCompatActivity() {
 
 
         initToolbar()
-        toolbar_internet.tvHeader.text="Internet Calculator"
+        toolbar_internet.tvHeader.text="Interest Calculator"
 
 
 

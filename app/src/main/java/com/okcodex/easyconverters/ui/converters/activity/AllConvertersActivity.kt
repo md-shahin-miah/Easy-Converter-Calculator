@@ -1,5 +1,6 @@
 package com.okcodex.easyconverters.ui.converters.activity
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -7,6 +8,10 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.okcodex.easyconverters.R
 import com.okcodex.easyconverters.ui.converters.activity.utils.*
+import kotlinx.android.synthetic.main.activity_age_calculator.*
+import kotlinx.android.synthetic.main.activity_all_converters.*
+import kotlinx.android.synthetic.main.toolbar_menu.*
+import kotlinx.android.synthetic.main.toolbar_menu.view.*
 
 class AllConvertersActivity : AppCompatActivity() {
 
@@ -28,9 +33,12 @@ class AllConvertersActivity : AppCompatActivity() {
     private lateinit var etFrom: EditText
 
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_all_converters)
+
+        supportActionBar?.hide()
 
         calculateAllConverter = findViewById(R.id.calculateAllConverter)
         resultShowText = findViewById(R.id.resultShowText)
@@ -43,6 +51,8 @@ class AllConvertersActivity : AppCompatActivity() {
 
         val array=intent.getIntExtra("converter",R.array.weight_array)
 
+        initToolbar()
+        toolbar_All_Convert.tvHeader.text="ALl Converters "
 
 
         ArrayAdapter.createFromResource(
@@ -154,4 +164,13 @@ class AllConvertersActivity : AppCompatActivity() {
         }
     }
 
+    private fun initToolbar() {
+
+
+        ivBack.setOnClickListener {
+            onBackPressed()
+            finish()
+        }
+
+    }
 }
