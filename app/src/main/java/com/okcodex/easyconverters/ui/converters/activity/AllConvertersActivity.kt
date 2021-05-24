@@ -14,8 +14,8 @@ class AllConvertersActivity : AppCompatActivity() {
         private const val TAG = "AllConvertersActivity"
     }
 
-    private var valueFrom = "METRE"
-    private var valueTo = "METRE"
+    private var valueFrom = ""
+    private var valueTo = ""
 
 
     private lateinit var calculateAllConverter: Button

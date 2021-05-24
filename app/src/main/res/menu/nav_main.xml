@@ -9,10 +9,7 @@
 <!--            android:icon="@drawable/ic_home"-->
 <!--            android:title="@string/menu_home" />-->
 
-        <item
-            android:id="@+id/nav_calculator"
-            android:icon="@drawable/ic_calculator"
-            android:title="@string/calculator" />
+
 
 <!--        <item-->
 <!--            android:id="@+id/nav_tools"-->
@@ -24,6 +21,12 @@
             android:id="@+id/nav_converter"
             android:icon="@drawable/ic_magnet"
             android:title="@string/unit_converters" />
+
+
+        <item
+            android:id="@+id/nav_calculator"
+            android:icon="@drawable/ic_calculator"
+            android:title="@string/calculator" />
 
     </group>
 

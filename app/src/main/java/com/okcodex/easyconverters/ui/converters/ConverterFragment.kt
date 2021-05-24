@@ -50,10 +50,10 @@ class ConverterFragment : Fragment() {
            // Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
            openAllConvertersActivity(R.array.power_array)
         }
-        resolationCalculator.setOnClickListener {
-            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
-           // openAllConvertersActivity(R.array.length_array)
-        }
+//        resolationCalculator.setOnClickListener {
+//            Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show()
+//           // openAllConvertersActivity(R.array.length_array)
+//        }
 
 
 
